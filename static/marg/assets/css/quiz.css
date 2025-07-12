@@ -2,7 +2,7 @@ body {
   background: #f8f9fa;
   background-image: url('../img/BackgroundQuiz2.png');
   background-position: center;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-size: cover;
 }
 

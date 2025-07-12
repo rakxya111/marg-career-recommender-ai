@@ -141,10 +141,13 @@ body {
   border-radius: 16px;
   box-shadow: 4px 4px 2px 0 rgba(0, 0, 0, 0.25);
   background-color: #EBEBEB;
+  
 }
 
+
+
 .body-box-item h3 {
-  color: orangered;
+  color: rgb(0, 0, 0);
   margin-bottom: 0;
 }
 
@@ -191,29 +194,103 @@ body {
 }
 
 /* ✅ Comments & Tags under description */
+/* ✅ Comments & Tags under description */
 .meta-info {
-  margin-top: 10px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  gap: 10px; /* small gap between rows when wrapping */
+  margin-top: 10px;
   font-size: 0.85rem;
   color: #333;
+  margin-bottom: 10px;
 }
 
 .meta-info .comments-count {
+  flex-shrink: 0;
   font-weight: 500;
 }
 
 .meta-info .tags {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  gap: 6px; /* spacing between tags */
 }
 
-.meta-info .tags .badge {
-  background-color: #007bff;
+.meta-info .tag-item {
+  display: inline-block;
+  background-color: #ff4500; /* match your title color */
   color: #fff;
   border-radius: 12px;
-  padding: 2px 8px;
+  padding: 3px 8px;
   font-size: 0.75rem;
-  margin-left: 5px;
+  line-height: 1;
+}
+
+
+.meta-info .tags .badge {
+  background-color: #ff4500;
+  color: #fff;
+  border-radius: 12px;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  line-height: 1;
+}
+
+
+
+/* Linked title styling */
+.body-box-item h3 a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.body-box-item h3 a:hover {
+  color: darkred;
+  text-decoration: underline;
+}
+
+/* Read more button as link */
+.read-more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.read-more-btn i {
+  margin-left: 8px;
+}
+.blog-title {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  color: #ff4500; /* Orangered */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  margin: 40px 0 20px;
+  position: relative;
+  
+}
+
+.blog-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #ff4500;
+  margin: 10px auto 0;
+  border-radius: 2px;
 }
