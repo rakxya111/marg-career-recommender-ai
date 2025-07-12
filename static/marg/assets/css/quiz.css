@@ -1,0 +1,45 @@
+body {
+  background: #f8f9fa;
+  background-image: url('../img/BackgroundQuiz2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.quiz {
+  max-width: 600px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#start-screen {
+  text-align: center;
+}
+
+.option-btn {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px 20px;
+  background: #f1f1f1;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.option-btn:hover {
+  background: #e2e6ea;
+}
+
+.option-btn.selected {
+  background: #28a745;
+  color: white;
+}
+
+#next-btn, #done-btn {
+  margin-top: 20px;
+}
