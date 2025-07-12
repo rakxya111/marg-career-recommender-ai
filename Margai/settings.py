@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'margapp',
     'accounts',
-    
+    'blogapp',    
 ]
 
 REST_FRAMEWORK = {

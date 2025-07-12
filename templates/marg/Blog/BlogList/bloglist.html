@@ -1,0 +1,179 @@
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'marg/assets/css/blog.css' %}" />
+{% endblock %} {% block content %}
+
+<section class="blog">
+  <div class="head">
+    <div class="head-title">
+      <h2>The Marg Blog</h2>
+    </div>
+    <div class="head-add">
+      <input type="text" placeholder="What's on your mind......" readonly />
+      <button class="open-modal-btn">+</button>
+    </div>
+  </div>
+
+  <div class="modal" id="postModal">
+    <div class="modal-content">
+      <h2>Create Post</h2>
+
+      <div class="input-row">
+        <div class="input-group">
+          <label for="title">Title</label>
+          <input type="text" id="title" />
+        </div>
+        <div class="input-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" />
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label for="tags">Tags</label>
+        <input type="text" id="tags" />
+      </div>
+
+      <div class="input-group">
+        <label for="description">Description</label>
+        <textarea id="description"></textarea>
+      </div>
+
+      <div class="buttons">
+        <button class="cancel-btn">Redo</button>
+        <button class="post-btn">Post</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="body-box">
+    <div class="body-box-item-1 body-box-item">
+      <img src="../assets/img/Chef.jpg" alt="Chef" />
+
+      <h3>Hotel Chef</h3>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim amet illo,
+        doloremque exercitationem hic sunt itaque accusantium provident
+        excepturi repudiandae ratione eius impedit libero in omnis praesentium,
+        deleniti nam voluptatum.
+      </p>
+
+      <!-- Comments & Tags section -->
+      <div class="meta-info">
+        <span class="comments-count">💬 12 Comments</span>
+        <span class="tags">
+          Tags:
+          <span class="badge badge-primary">Food</span>
+          <span class="badge badge-primary">Hospitality</span>
+        </span>
+      </div>
+
+      <button>
+        <span>Read more</span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+
+    <div class="body-box-item-2 body-box-item">
+      <img src="../assets/img/veterinary.jpg" alt="Vet" />
+      <h3>Veterinary</h3>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores
+        reiciendis tenetur omnis nostrum dolorum ipsa sit quas commodi
+        dignissimos, iure tempora enim in architecto cupiditate veritatis
+        ratione incidunt saepe placeat?
+      </p>
+      <button>
+        <span>Read more</span><i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+
+    <div class="body-box-item-3 body-box-item">
+      <img src="../assets/img/engineer.webp" alt="Engineer" />
+      <h3>Engineer</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum minus
+        possimus nemo temporibus. Nemo deleniti distinctio tempora obcaecati,
+        quas, magnam itaque repellat ad quae voluptates est accusamus nesciunt
+        ducimus quasi?
+      </p>
+      <button>
+        <span>Read more</span><i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+
+    <div class="body-box-item-4 body-box-item">
+      <img src="../assets/img/IT.jpg" alt="IT" />
+      <h3>IT Sector</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+        tenetur ullam, nesciunt obcaecati nam dicta voluptatum ab quo vero
+        officia aspernatur itaque debitis dignissimos esse accusamus neque? In,
+        optio modi.
+      </p>
+      <button>
+        <span>Read more</span><i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+
+    <div class="body-box-item-5 body-box-item">
+      <img src="../assets/img/pilot.webp" alt="" />
+      <h3>Pilot</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt cumque
+        accusantium officia possimus sapiente accusamus, voluptas harum?
+        Reiciendis corrupti ullam dicta impedit sint praesentium deserunt iusto
+        delectus ducimus. Obcaecati, provident.
+      </p>
+      <button>
+        <span>Read more</span><i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+
+    <div class="body-box-item-6 body-box-item">
+      <img src="../assets/img/technician.webp" alt="" />
+      <h3>Technician</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod debitis
+        aspernatur fugit? Aspernatur ex veniam nihil adipisci consequuntur unde
+        quaerat iure? Molestias, officia laudantium quis ipsum blanditiis iure
+        culpa quos.
+      </p>
+      <button>
+        <span>Read more</span><i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+
+    <div class="body-box-item-7 body-box-item">
+      <img src="../assets/img/Teacher.webp" alt="" />
+      <h3>Teacher</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error dolor
+        alias sit illo nemo eveniet vitae perferendis at? Tempore blanditiis
+        natus perferendis optio officia praesentium sit laborum rerum totam
+        possimus?
+      </p>
+      <button>
+        <span>Read more</span><i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+
+    <div class="body-box-item-8 body-box-item">
+      <img src="../assets/img/painter.jpg" alt="" />
+      <h3>Painter</h3>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem esse dicta
+        perferendis consectetur voluptate nostrum cum possimus, error,
+        temporibus, quos natus corrupti nobis ad tempora cumque fugit accusamus
+        dolore eius.
+      </p>
+      <button>
+        <span>Read more</span><i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+</section>
+
+{% endblock content %} {% block_extra js %}
+<script src="marg/assets/js/blog.js"></script>
+{% endblock %}

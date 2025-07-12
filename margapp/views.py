@@ -27,9 +27,7 @@ def Recommendations(gender, part_time_job, absence_days, extracurricular_activit
     return top_classes_names_probs
 
 
-# Home View
-def home_view(request):
-    return render(request, 'marg/base.html')
+
 
 # Recommend Result view
 def recommend_view(request):

@@ -1,12 +1,22 @@
 <head>
   {% load static %}
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <!-- <link rel="stylesheet" href="{% static 'marg/assets/base.css' %}"> -->
+<link rel="stylesheet" href="{% static 'marg/assets/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'marg/assets/base.css' %}">
   {% block extra_css %}{% endblock %}
 </head>
 
 <body>
     <h1>Home page</h1>
+  
+  <!-- {% include "marg/header.html" %} -->
+
   {% block content %}{% endblock %}
+  
+  <!-- {% include 'marg/footer.html' %} -->
+
+<script src="{% static 'marg/assets/js/bootstrap.bundle.min.js' %}"></script>
+  </body>
   {% block extra_js %}{% endblock %}
+
 </body>

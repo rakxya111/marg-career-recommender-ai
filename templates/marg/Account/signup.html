@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create Account</title>
+  <link rel="stylesheet" href="../assets/css/signup.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- ✅ Font Awesome CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-yH6S7j3ahOa6gokj3Dpyy5TpUVbsuKRv61cU6e9OMqNKV94RQp+B9P2TLXU6PQ0mcs8ZQPPtkFYSGH7Mx2tHAw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+  <div class="container">
+
+    <div class="left-panel">
+        <img src="../assets/img/FINAL-MARG-NAVBAR-LOGO-GIF.gif" alt="marg logo" style="height: 100px; width: 350px; padding-bottom: 20px;">
+      <h2>Hello Friend !</h2>
+      <p>To keep connected with us<br/>please sign up with your personal <br>information</p>
+    </div>
+
+    <div class="right-panel">
+      <h1>Create Account</h1>
+      <form id="signup-form">
+
+        <div class="name-fields">
+          <div class="input-group">
+            <i class="fas fa-user icon"></i>
+            <input type="text" placeholder="First name" required />
+          </div>
+          <div class="input-group">
+            <i class="fas fa-user icon"></i>
+            <input type="text" placeholder="Last name" required />
+          </div>
+        </div>
+
+        <div class="input-group full">
+          <i class="fas fa-envelope icon"></i>
+          <input type="email" placeholder="E-mail" required />
+        </div>
+
+        <div class="input-group full">
+          <!-- <label> -->
+            <i class="fa fa-lock icon"></i>
+            <input type="password" placeholder="Password" id="password" required />
+            <i class="fas fa-eye toggle-eye" id="eyeIconPassword"></i>
+          <!-- </label> -->
+        </div>
+
+        <div class="input-group full">
+          <!-- <label> -->
+            <i class="fa fa-lock icon"></i>
+            <input type="password" placeholder="Confirm Password" id="confirmPassword" required />
+            <i class="fas fa-eye toggle-eye" id="eyeIconConfirmPassword"></i>
+          <!-- </label> -->
+        </div>
+
+        <p>Already have account <a href="../logIn/login.html">Login?</a></p>
+        <button type="submit" class="signup-btn">Sign Up</button>
+      </form>
+    </div>
+  </div>
+  <script src="../assets/js/signup.js"></script>
+</body>
+</html>
